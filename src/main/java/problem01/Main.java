@@ -21,6 +21,27 @@ public class Main {
 	}
 	
 	public static int countClap(int number) {
-		return 0;
+		
+	
+		int cnt = 0;
+		int tmpNumber = 0;
+		String str = String.valueOf(number);
+		for(int i = 0; i<str.length(); i++) {
+			tmpNumber = Integer.parseInt(str.charAt(i)+"");
+			
+			//System.out.println(tmpNumber);
+			
+			if(tmpNumber == 3) {
+				cnt++;
+			}
+			if(tmpNumber == 6) {
+				cnt++;
+			}
+			if(tmpNumber == 9) {
+				cnt++;
+			}
+		}
+			
+		return cnt;
 	}
 }
